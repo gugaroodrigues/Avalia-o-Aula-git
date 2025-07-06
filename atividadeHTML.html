@@ -1,0 +1,330 @@
+<html lang="pt-BR"><head>
+  <meta charset="UTF-8">
+  <title>Equipe - Projeto GitHub</title>
+  <style>
+    :root {
+      --cor-primaria: #2c3e50;
+      --cor-secundaria: #3498db;
+      --cor-fundo: #ecf0f1;
+      --cor-branco: #fff;
+      --cor-claro: #f7f9fa;
+      --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-primaria);
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header, section, footer {
+      background-color: var(--cor-branco);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: var(--sombra-suave);
+    }
+
+    h1, h2, h3 {
+      color: var(--cor-primaria);
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 8px;
+    }
+
+    header {
+      border-left: 8px solid var(--cor-secundaria);
+    }
+
+    .painel-git {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .comando {
+      flex: 1 1 220px;
+      background-color: var(--cor-claro);
+      padding: 15px;
+      border-left: 5px solid var(--cor-secundaria);
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    .comando code {
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .integrante {
+      background-color: #fefefe;
+      border: 1px solid #dddddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: var(--sombra-suave);
+    }
+
+    .integrante1 {
+      background-color: #f8ecde;
+    }
+
+    .integrante2 {
+      background-color: #dbebd1;
+    }
+
+    .integrante3 {
+      background-color: #eee6f8;
+    }
+
+    .integrante4 {
+      background-color: #fcd4d4;
+    }
+
+    .bloco {
+      padding: 15px;
+      border-left: 4px solid var(--cor-secundaria);
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+      .painel-git {
+        flex-direction: column;
+      }
+    }
+  </style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+
+  <header>
+    <h1>Equipe: [Nome da Equipe]</h1>
+    <p><strong>Unidade Curricular:</strong> Git e GitHub</p>
+    <p><strong>Professor:</strong> Irlândio Oliveira</p>
+  </header>
+
+  <section>
+    <h2>Comandos mais utilizados no Git</h2>
+    <div class="painel-git">
+      <div class="comando"><code>git init</code>Inicializa um repositório Git</div>
+      <div class="comando"><code>git clone [url]</code>Clona um repositório remoto</div>
+      <div class="comando"><code>git status</code>Mostra o estado atual dos arquivos</div>
+      <div class="comando"><code>git add .</code>Adiciona todos os arquivos para o commit</div>
+      <div class="comando"><code>git commit -m "mensagem"</code>Registra alterações</div>
+      <div class="comando"><code>git push</code>Envia as alterações para o repositório remoto</div>
+      <div class="comando"><code>git pull</code>Atualiza o repositório local</div>
+      <div class="comando"><code>git log</code>Exibe o histórico de commits</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Apresentação dos Integrantes</h2>
+
+    <div class="integrante integrante1">
+      <h3>Nome: Gustavo Rodrigues de Bastos</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: Blumenau<br>
+        Idade: 29 anos<br>
+        Formação: Cursando Analise e desenvolvimento de sistemas
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        Eu escolhi este curso, pois achei que seria a melhor opção dentre os os cursos dispooniveis no programa, além claro de que seria 
+        o curso ideal para realizar certos projetos pessoais e também por se encaixar melhor nos meus horarios principalmente em relação ao meu trabalho atual<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        Sim, é um sonho antigo, perdi minha oportunidade a anos atras e agora não quero perder novamente esta oportunidade!<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        Tiro em media 4 horas diarias para estudo fora do curso, totalizando 28/30 horas por semana. <br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        Sim, atualmente ja estou estudando e pesquisando sobre, alem de estar fazendo alguns cursos por fora do programa.
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        Até o momento no curso tivemos alguns aprendizados interessantes, atualmente estamos tendo aulas de git, introdução a dispositivos movéis e metodologias ágeis.
+        De maneira geral posso resumir alguns aprendizados tais como os de git aonde aprimorei meus conhecimentos, sobre versionamento, branch, e como trabalhar em equipe usando o git.
+        Em metodologias ágeis posso afirmar que o mais impactante para mim foi descobrir como utilizar o "Scrum" modelo este que seria de grande ajuda anos atras quando finalizei o meu projeto do entra21
+        Em introdução a dispositivos móveis, tivemos alguns problemas com o ambiente de trabalho dentro da instituição de ensino mas posso concluir dizendo que um dos aprendizadosmais importantes que obtive foi
+        aprender a criar um senso mais critico como desenvolvedor, conseguindo analisar e criar um relatorio sobre certos aplicativos, também estimulando a minha curiosidade e o autodidatismo, aonde fizemos uma
+        tela de login, aonde fui atras e a incorporei com outra atividade de metodologias ágeis.
+        Tenho buscado em contribuir de algumas maneiras, sempre tentando participar, seja questionando ou interagindo com com os colegas em classe, além de compartilhar o pouco que sei da maneira que posso, 
+        convidando-os colegas a entrarem no discord para discutir sobre algumas atividades e ajudar uns aos autros.
+
+      </div>
+    </div>
+
+    <!-- Repetir estrutura para os demais integrantes -->
+
+    <div class="integrante integrante2">
+      <h3>Nome: Vinícius de Senna</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: Santa Catarina<br>
+        Idade: 18 anos<br>
+        Formação: Ensino Superior em andamento – Ciências da Computação
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        Decidi entrar no curso para aprender Flutter e ter mais oportunidades no mercado de trabalho.<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        Sim – Tenho interesse em atuar profissionalmente com desenvolvimento.<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        Em média, 10 horas por semana<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        Sim – Pretendo fazer outros cursos relacionados a desenvolvimento para me manter atualizado.
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        Aprendi bastante sobre metodologias ágeis, especialmente na prática com o trabalho em grupo. Tenho contribuído com minha experiência prévia na área de tecnologia, participando ativamente nas discussões e decisões do projeto. Além disso, estou avançando no aprendizado do Flutter e aplicando esse conhecimento diretamente no desenvolvimento das funcionalidades da aplicação.
+      </div>
+    </div>
+
+    <div class="integrante integrante3">
+      <h3>Nome: Gabriel Tormena Vargas</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: Blumenau<br>
+        Idade: 21<br>
+        Formação: Cursando ensino superior
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        Ganhar experiencia em desenvolvimento mobile, sempre tive interesse em entrar no meio e acredito que o curso vai me ajudar muito.<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        Sim, tenho muito interesse em trabalhar em desenvolvimento, seja mobile ou não.<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        No minimo 4 horas por dia.<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        Sim, pretendo realizar a conclusão de outros cursos para acrescentar ainda mais em minha experiencia e sabedoria.
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        Até agora aprendi o basico sobre flutter, metodologias ageis e como usar o git bash para facilitar o trabalho.
+      </div>
+    </div>
+
+    <div class="integrante integrante4">
+      <h3>Nome: Vinícius Rafael Zanella</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: Blumenau - SC<br>
+        Idade: 18<br>
+        Formação: Cursando ensino médio integrado com curso técnico de Desenvolvimento de Sistemas e +Devs2Blu Flutter
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        Escolhi este curso para poder aprofundar meus conhecimentos na área de desenvolvimento<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        Sim, pois é uma área onde tenho grande conhecimento e facilidade<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        Cerca de 20 horas por semana<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        Sim, atualmente estou fazendo curso de Flutter na Udemy para aprofundar mais ainda no conteúdo.
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        No curso, aprimorei competências práticas fundamentais. Com o Git, solidifiquei meus conhecimentos em versionamento e trabalho colaborativo. Em Metodologias Ágeis, a descoberta do Scrum foi o ponto alto, uma ferramenta que teria sido transformadora em projetos anteriores. Já em Dispositivos Móveis, apesar dos desafios de ambiente, desenvolvi um senso crítico mais apurado e a proatividade de um autodidata, o que demonstrei ao criar uma tela de login integrando aprendizados de outras áreas
+      </div>
+    </div>
+
+    <div class="integrante integrante5">
+      <h3>Nome: [Nome do Integrante 5]</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: [Inserir cidade]<br>
+        Idade: [Inserir idade]<br>
+        Formação: [Inserir formação ou nível escolar]
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        [Texto do aluno]<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        [Sim/Não – justificar]<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        [Inserir tempo médio por semana]<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        [Sim/Não – comentar]
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        [Texto explicando o que aprendeu até agora e como tem contribuído com o projeto]
+      </div>
+    </div>
+
+    <div class="integrante integrante6">
+      <h3>Nome: [Nome do Integrante 6]</h3>
+
+      <div class="bloco">
+        <strong>Informações Pessoais:</strong><br>
+        Cidade: [Inserir cidade]<br>
+        Idade: [Inserir idade]<br>
+        Formação: [Inserir formação ou nível escolar]
+      </div>
+
+      <div class="bloco">
+        <strong>Interesse no Curso:</strong><br>
+        Por que escolheu realizar este curso?<br>
+        [Texto do aluno]<br><br>
+        Tem interesse em trabalhar com desenvolvimento?<br>
+        [Sim/Não – justificar]<br><br>
+        Quantas horas dedica aos estudos deste curso?<br>
+        [Inserir tempo médio por semana]<br><br>
+        Pretende realizar outros cursos para ampliar os conhecimentos?<br>
+        [Sim/Não – comentar]
+      </div>
+
+      <div class="bloco">
+        <strong>Resumo dos aprendizados:</strong><br>
+        [Texto explicando o que aprendeu até agora e como tem contribuído com o projeto]
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2025 - Projeto GitHub - UC Git | Professor Irlândio Oliveira</p>
+  </footer>
+
+
+
+</body></html>
